@@ -7,12 +7,12 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000 || "https://elder-health-system-2c6i.vercel.app/";
 
 // Middleware
 app.use(helmet());
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'http://localhost:5173' || "https://elder-health-system.vercel.app/",
   credentials: true
 }));
 app.use(cookieParser());

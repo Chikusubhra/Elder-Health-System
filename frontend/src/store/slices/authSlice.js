@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'http://localhost:5000/api' || "https://elder-health-system-2c6i.vercel.app/api";
 
 const initialState = {
   user: null,
